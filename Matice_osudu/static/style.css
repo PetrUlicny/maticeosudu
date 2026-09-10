@@ -27,10 +27,6 @@ body {
 }
 */
 
-main {
-    padding: 200px 5px;
-}
-
 .hero-section {
     position: relative;
     width: 100%;
@@ -40,6 +36,7 @@ main {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom:150px;
 }
 
 .moon-image {
@@ -95,15 +92,18 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .card {
-    max-width: 500px;
+    width:90%;
     color: var(--text-main);
-    font-size: 2Opx;
     border-radius: 51px;
     padding: 50px;
+}
+
+.card p {
+    font-size: 1.3rem;
 }
 
 .card span {
@@ -127,11 +127,28 @@ main {
     .cards {
         display:block;
         position:relative;
+        width: 1600px;
+        height: 650px;
+        border:1px solid red;
+        margin: 80px auto;
     }
 
     .card {
+        position:absolute;
         width: 767px;
-        height:452px;
+        height:552px;
+    }
+
+    .card1 {
+        top:0;
+        left:0;
+        z-index:1;
+    }
+
+    .card2 {
+        top:20%;
+        right:0;
+        z-index:2;
     }
     
     .card1 #text-box {
@@ -139,7 +156,4 @@ main {
         border: 1px solid white;
     }
 
-    .card2 {
-        
-    }
 }
