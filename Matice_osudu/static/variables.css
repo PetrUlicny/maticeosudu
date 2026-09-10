@@ -1,0 +1,9 @@
+:root {
+    --primary-bg: #261237;
+    --secondary-bg: #010103;
+    --text-main: #fff;
+    --text-muted: #ffc9b2;
+    --glow: #4e2358;
+    --primary-btn: rgb(91,42,74, 80%);
+    --secondary-btn: #8e1063;
+}
