@@ -1,0 +1,70 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* 1. ZÁKLAD PRO MOBILY (Výchozí stav) */
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('/img/space.jpg') center bottom /cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.circle-outline {
+  position: absolute;
+  z-index: 1;
+  width: 70vw;
+  height: 70vw; 
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+
+.moon-image {
+  position: absolute;
+  z-index: 2;
+  width: 60vw;
+
+}
+
+.hero-title {
+  position: absolute;
+  z-index: 3;
+  top: 55%; 
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem; /* Menší písmo pro telefony */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+/* 2. ZVĚTŠENÍ PRO DESKTOP A TABLETY (Displeje širší než 768 px) */
+@media (min-width: 768px) {
+  
+  .circle-outline {
+    width: 500px; /* Zastropování velikosti, aby kruh nebyl na PC obří */
+    height: 500px;
+  }
+
+  .moon-image {
+    width: 450px;
+  }
+
+  .hero-title {
+    font-size: 5rem; /* Zvětšení typografie pro velký monitor */
+    top: 60%;
+  }
+}
