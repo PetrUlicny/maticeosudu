@@ -2,18 +2,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(var(--secondary-bg) 90%, var(--primary-bg) 90%, var(--glow) 100%);
+    background: black;
     font-family: "Playfair Display";
 }
 
-/*body::before {
+body::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 1;
     pointer-events: none;
     background-size: 200px 200px;
     opacity: 0.35;
@@ -25,7 +25,6 @@ body {
         radial-gradient(2px 2px at 130px 80px, #fff, transparent),
         radial-gradient(1.5px 1.5px at 160px 120px, #fff, transparent);
 }
-*/
 
 .hero-section {
     position: relative;
@@ -103,7 +102,7 @@ body {
 }
 
 .card p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .card span {
@@ -127,16 +126,19 @@ body {
     .cards {
         display:block;
         position:relative;
-        width: 1600px;
-        height: 650px;
-        border:1px solid red;
+        width: 1125px;
+        height: 1200px;
         margin: 80px auto;
     }
 
     .card {
         position:absolute;
-        width: 767px;
-        height:552px;
+        width: 690px;
+        height:auto;
+    }
+
+    .card p {
+        font-size:1.2rem;
     }
 
     .card1 {
@@ -146,14 +148,20 @@ body {
     }
 
     .card2 {
-        top:20%;
-        right:0;
+        top:17%;
+        left:30%;
         z-index:2;
+        box-shadow: 0px 9px 15px black;
+        background:linear-gradient(var(--primary-bg),var(--glow));
     }
     
     .card1 #text-box {
-        width: 200px;
-        border: 1px solid white;
+        width: 290px;
+    }
+
+    .card2 .text-right {
+        width: 650px;
+        margin-left:40px;
     }
 
 }
