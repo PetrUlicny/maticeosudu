@@ -76,7 +76,7 @@ body::before {
     }
 
     .moon-image {
-        width: 450px;
+        width: 650px;
     }
 
     .hero-title {
@@ -91,11 +91,10 @@ body::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
 }
 
 .card {
-    width:90%;
+    width:70%;
     color: var(--text-main);
     border-radius: 51px;
     padding: 50px;
@@ -119,7 +118,7 @@ body::before {
 }
 
 .card2 {
-    background: linear-gradient(var(--primary-bg), var(--secondary-bg));
+    background: linear-gradient(var(--secondary-bg), var(--primary-bg));
 }
 
 @media (min-width:1200px) {
