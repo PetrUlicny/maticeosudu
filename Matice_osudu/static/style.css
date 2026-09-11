@@ -4,6 +4,7 @@ body {
     box-sizing: border-box;
     background: black;
     font-family: "Playfair Display";
+    color:var(--text-main);
 }
 
 body::before {
@@ -51,8 +52,6 @@ body::before {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
-
-    color: var(--text-main);
     font-size: 2.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -95,7 +94,6 @@ body::before {
 
 .card {
     width:70%;
-    color: var(--text-main);
     border-radius: 51px;
     padding: 50px;
 }
@@ -126,8 +124,8 @@ body::before {
         display:block;
         position:relative;
         width: 1125px;
-        height: 1200px;
-        margin: 80px auto;
+        height: 750px;
+        margin: 0 auto;
     }
 
     .card {
@@ -147,7 +145,7 @@ body::before {
     }
 
     .card2 {
-        top:17%;
+        top:28%;
         left:30%;
         z-index:2;
         box-shadow: 0px 9px 15px black;
@@ -162,5 +160,92 @@ body::before {
         width: 650px;
         margin-left:40px;
     }
+}
 
+/* --- Calculator --- */
+
+/* -- chci rozbor -- */
+
+.scroll-button {
+    margin: 80px 0;
+}
+
+.scroll-button a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:var(--text-main);
+    font-size: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 90%;
+    border-radius: 16px;
+    padding:15px 0;
+    margin: 0 auto;
+    transition: 0.5s ease-out;
+}
+
+.scroll-button a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* -- kalkulačka -- */
+
+.calculator {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0 40px;
+    font-size:1.4rem;
+}
+
+.calculator h1 {
+    font-size:2rem;
+}
+
+.calculator h1 span {
+    display:block;
+}
+
+.calculator span {
+    color: var(--text-muted);
+}
+
+.calculator a {
+    text-decoration: none;
+    color:var(--text-main);
+    background:linear-gradient(var(--secondary-btn),var(--primary-btn));
+    width: 80%;
+    padding: 10px 0;
+    border-radius: 16px;
+    font-size:1.5rem;
+    margin-top:30px;
+    transition: 0.5s ease-out;
+}
+
+.calculator a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--glow);
+}
+
+.calculator p {
+    margin: 2px 0;
+}
+
+@media (min-width:1200px) {
+    .scroll-button a {
+        max-width: 650px;
+        font-size:3rem;
+    }
+
+    .calculator p {
+        max-width: 800px;
+    }
+
+    .calculator a {
+        margin-top: 70px;
+        max-width: 300px ;
+    }
 }
