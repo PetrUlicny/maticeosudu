@@ -361,6 +361,8 @@ body::before {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .recenze .box {
@@ -396,7 +398,7 @@ body::before {
     box-shadow: 0 5px 10px var(--glow);
 }
 
-@media (min-width:1200px) {
+@media (min-width:1600px) {
     .recenze .boxes {
         flex-direction:row;
         justify-content: center;
@@ -415,19 +417,117 @@ body::before {
 /* --- ABOUT ME --- */
 
 .about-me {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
+    line-height: 1.6;
+    padding:40px;
+    border-radius:24px;
+    background: linear-gradient(color-mix(in srgb, var(--secondary-bg) 50%, transparent),
+        color-mix(in srgb, var(--primary-bg) 30%, transparent));
 }
 
 .about-me::first-letter {
     float:left;
-    font-size:3rem;
-    line-height:1;
+    font-size:4rem;
+    line-height:0.8;
+    margin-left:-20px;
+    margin-top:-5px;
+}
+
+.about-me p {
+    margin: 5px 0;
+    font-size:1.2rem;
+}
+
+.about-me p span {
+    color:var(--text-muted);
+}
+
+@media (min-width:1200px) {
+    .about-me {
+        width: 60%;
+        padding:50px;
+        font-size:1.5rem;
+        word-spacing:2.5px;
+    }
 }
 
 /* --- FOOTER --- */
 
 footer {
+    background-color:rgb(38,18,55,0.5);
     margin-top: 100px;
     text-align: center;
+    margin-bottom:0;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.documents {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.documents a {
+    color:var(--text-main);
+    text-decoration: none;
+    font-size:1.2rem;
+    transition:0.3s ease-out;
+}
+
+.documents a:hover {
+    transform: translateY(-2px);
+}
+
+.personal-data {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:0 50px;
+}
+
+.personal-data ul {
+    list-style-type: none;
+    padding:0;
+}
+
+.personal-data-left {
+    text-align: left;
+}
+
+.personal-data-right {
+    text-align: right;
+}
+
+.copyright {
+    width: 200px;
+    margin: 50px auto;
+}
+
+.creator a {
+    text-decoration: none;
+    color:rgb(255,255,255,0.5);
+}
+
+@media (min-width:1000px) {
+    .documents {
+        flex-direction: row;
+        gap:0;
+    }
+
+    .copyright {
+        width: 500px;
+    }
+
+    .personal-data {
+    display:flex;
+    justify-content: space-between;
+}
 }
