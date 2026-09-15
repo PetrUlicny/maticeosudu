@@ -1,0 +1,39 @@
+.recenze {
+    background-color: transparent !important;
+}
+
+.recenze .heading {
+    font-size: 2rem;
+}
+
+/* Hlavní obal pro recenze */
+#recenze-container {
+    display: block !important;
+    column-count: 3;
+    column-gap: 24px;
+    max-width: 1500px !important;
+    margin: 0 auto !important;
+    padding: 0 20px;
+}
+
+/* Samotná kartička recenze (.box) */
+#recenze-container .box {
+    display: inline-block;
+    width: 100%;
+    height: auto !important;
+    box-sizing: border-box;
+    break-inside: avoid;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1300px) {
+    #recenze-container {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    #recenze-container {
+        column-count: 1;
+    }
+}
