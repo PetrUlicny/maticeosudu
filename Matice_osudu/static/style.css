@@ -102,6 +102,7 @@ content: "";
     width: 70%;
     border-radius: 51px;
     padding: 50px;
+    z-index:2;
 }
 
 .card p {
