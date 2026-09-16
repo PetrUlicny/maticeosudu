@@ -356,6 +356,7 @@ content: "";
     background-color: rgba(1, 1, 3, 0.5);
     margin: 50px auto;
     padding: 10px;
+    z-index:2;
 }
 
 .recenze .heading {
@@ -377,7 +378,7 @@ content: "";
     background: var(--primary-bg);
     border-radius: 15px;
     padding: 30px;
-    z-index:2;
+    z-index:3;
 }
 
 .recenze .box h1 {
