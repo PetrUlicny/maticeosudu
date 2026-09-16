@@ -512,6 +512,11 @@ footer p {
     text-align: right;
 }
 
+.personal-data a {
+    color:var(--text-main);
+    text-decoration: none;
+}
+
 .copyright {
     width: 200px;
     margin: 50px auto;
