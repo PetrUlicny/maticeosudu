@@ -110,7 +110,8 @@ content: "";
 }
 
 .card span {
-    color: var(--text-muted);
+    /*color: var(--text-muted);*/
+    font-weight: bold;
 }
 
 .card h1 {
@@ -217,7 +218,8 @@ content: "";
 }
 
 .calculator span {
-    color: var(--text-muted);
+    /*color: var(--text-muted);*/
+    font-weight: bold;
 }
 
 .calculator a {
@@ -270,7 +272,7 @@ content: "";
 
 .rozbory .heading h1 span {
     display: block;
-    color: var(--text-muted);
+    font-weight: bold;
 }
 
 .rozbory .heading {
@@ -382,7 +384,8 @@ content: "";
 }
 
 .recenze .box h1 {
-    color: var(--text-muted);
+    /*color: var(--text-muted);*/
+    font-weight: bold;
 }
 
 .recenze .box p {
@@ -444,12 +447,14 @@ content: "";
 }
 
 .about-me p {
-    margin: 5px 0;
+    margin: 20px 0;
     font-size:1.2rem;
+    line-height: 1.2;
 }
 
 .about-me p span {
-    color:var(--text-muted);
+    /*color:var(--text-muted);*/
+    font-weight:bold;
 }
 
 @media (min-width:1200px) {
