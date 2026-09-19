@@ -42,14 +42,9 @@ content: "";
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: 150px;
+    margin-bottom: 150px; 
 }
-
-.moon-image {
-    position: absolute;
-    z-index: 2;
-    width: 70vw;
-}
+ 
 
 .hero-title {
     position: absolute;
@@ -74,14 +69,8 @@ content: "";
 }
 
 @media (min-width: 768px) {
-
-    .circle-outline {
-        width: 500px;
-        height: 500px;
-    }
-
     .moon-image {
-        width: 650px;
+        width: 550px;
     }
 
     .hero-title {
@@ -110,8 +99,7 @@ content: "";
 }
 
 .card span {
-    /*color: var(--text-muted);*/
-    font-weight: bold;
+    color: var(--text-muted);
 }
 
 .card h1 {
@@ -163,11 +151,12 @@ content: "";
     .card1 #text-box {
         width: 290px;
     }
-
+    /*
     .card2 .text-right {
         width: 650px;
         margin-left: 40px;
     }
+    */
 }
 
 /* --- Calculator --- */
@@ -218,8 +207,7 @@ content: "";
 }
 
 .calculator span {
-    /*color: var(--text-muted);*/
-    font-weight: bold;
+    color: var(--text-muted);
 }
 
 .calculator a {
@@ -272,7 +260,7 @@ content: "";
 
 .rozbory .heading h1 span {
     display: block;
-    font-weight: bold;
+    color:var(--text-muted);
 }
 
 .rozbory .heading {
@@ -308,7 +296,7 @@ content: "";
 }
 
 .rozbory .box .dash {
-    display: block;
+    display: block; 
 }
 
 .rozbory .box p {
@@ -384,8 +372,7 @@ content: "";
 }
 
 .recenze .box h1 {
-    /*color: var(--text-muted);*/
-    font-weight: bold;
+    color: var(--text-muted);
 }
 
 .recenze .box p {
@@ -453,8 +440,7 @@ content: "";
 }
 
 .about-me p span {
-    /*color:var(--text-muted);*/
-    font-weight:bold;
+    color:var(--text-muted);
 }
 
 @media (min-width:1200px) {
@@ -507,6 +493,7 @@ footer p {
     max-width: 1000px;
     margin: 0 auto;
     padding:0 50px;
+    text-align: center;
 }
 
 .personal-data ul {
@@ -514,12 +501,9 @@ footer p {
     padding:0;
 }
 
-.personal-data-left {
-    text-align: left;
-}
-
 .personal-data-right {
-    text-align: right;
+    color:rgb(255,255,255,0.5);
+    font-size:0.7rem;
 }
 
 .personal-data a {
@@ -546,9 +530,10 @@ footer p {
     .copyright {
         width: 500px;
     }
-
+    /*
     .personal-data {
     display:flex;
     justify-content: space-between;
-}
+    }
+    */
 }
