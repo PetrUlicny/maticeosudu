@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Objevte svůj skrytý potenciál díky hlubokému rozboru Matice osudu. Zjistěte, jaké energie vás ovlivňují a jak s nimi pracovat.">
+    <meta name="description"
+        content="Objevte svůj skrytý potenciál díky hlubokému rozboru Matice osudu. Zjistěte, jaké energie vás ovlivňují a jak s nimi pracovat.">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="Matice osudu | Hluboký osobní rozbor">
@@ -16,6 +17,7 @@
     <link rel="icon" type="image/x-icon" href="/img/moon-favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style-calculator.css">
     <link rel="stylesheet" href="/static/variables.css">
 </head>
 
@@ -30,7 +32,7 @@
     <main>
         <section class="cards">
             <div class="card card1">
-                <h1>Co je to matice osudu?</h1> 
+                <h1>Co je to Matice osudu?</h1>
                 <p><span>Matice osudu je metoda sebepoznání založená na numerologii
                         a systému 22 velkých arkán tarotu</span>. Vychází z data narození,
                     ze kterého se vypočítávají jednotlivé energie člověka a jejich
@@ -50,7 +52,7 @@
             <div class="card card2">
                 <p class="text-left">Každá z 22 energií má svou <span>pozitivní i negativní stránku</span>.
                     Nejde tedy o pevně daný osud, který bychom nemohli změnit.
-                    Naopak – matice ukazuje potenciál a určité vzorce, se kterými přicházíme
+                    Naopak – Matice ukazuje potenciál a určité vzorce, se kterými přicházíme
                     do života, ale <span>způsob, jakým je prožijeme, ovlivňujeme svými rozhodnutími,
                         postoji a vědomou prací na sobě</span>.</p>
 
@@ -76,12 +78,20 @@
 
         <section class="calculator">
 
-            <h1>VYPOČÍTEJTE SI SVŮJ <span>GRAF OSUDU</span></h1>
+            <div class="container">
+                <h1>VYPOČÍTEJTE SI SVŮJ <span>GRAF OSUDU</span></h1>
+                <div class="subtitle">
+                    <p>Zadejte své datum narození a objevte svůj osobní kód.</p>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="birthDate" placeholder="DD.MM.RRRR" maxlength="10">
+                    <button onclick="calculateSingle()">Vypočítat Matici osudu</button>
+                </div>
 
-            <p>Zajímá vás, jaké energie formují <span>váš život</span>?</p>
-            <p>Zadejte své údaje do <span>online kalkulačky</span> a objevte zdarma <span>svůj osobní graf</span>.</p>
+                <div id="singleResults"></div>
+            </div>
 
-            <a href="https://astro-calc.com/matrix-destiny/" target="_blank">otevřít kalkulačku</a>
+            <script src="/static/calculator.js"></script>
         </section>
 
         <section id="rozbory" class="rozbory">
@@ -93,8 +103,8 @@
 
             <div class="boxes">
 
-                <a href="https://form.simpleshop.cz/5QNpX/" class="box" target="_blank">
-                    <h1>Vztahová kompatibilita <span class="dash">-</span> Matice osudu</h1>
+                <a href="https://form.simpleshop.cz/pPyeG/" class="box" target="_blank">
+                    <h1>Dětská <span class="dash"> <br></span> Matice osudu</h1>
                 </a>
 
                 <a href="https://form.simpleshop.cz/jDxgN/" class="box box-main" target="_blank">
@@ -111,16 +121,18 @@
                     <h1>Dědictví předků <span class="dash">-</span> Matice osudu</h1>
                 </a>
 
-
-                <a href="https://form.simpleshop.cz/pPyeG/" class="box box-main" target="_blank">
+                <a href="https://form.simpleshop.cz/5QNpX/" class="box box-main" target="_blank">
                     <p>Nejžádanější</p>
-                    <h1>Dětská <span class="dash"> <br></span> matice osudu</h1>
+                    <h1>Vztahová kompatibilita <span class="dash">-</span> Matice osudu</h1>
                 </a>
-
 
                 <a href="https://form.simpleshop.cz/qGQpG/" class="box" target="_blank">
                     <h1>Osobní rozbor <span class="dash">+</span> Dědictví předků <span class="dash">+</span> Dětská
-                        matice osudu</h1>
+                        Matice osudu</h1>
+                </a>
+
+                <a href="https://form.simpleshop.cz/Pr0qm/" class="box" target="_blank">
+                    <h1>Roční prognóza</h1>
                 </a>
 
             </div>
@@ -172,19 +184,21 @@
                 že to není to, co skutečně hledám. A najednou jsem stála před otázkou: „<span>Tak co vlastně
                     chci?</span>“</p>
 
-            <p>O numerologii a tarot jsem se zajímala už předtím, ale právě <span>matice osudu mi tehdy začala dávat
-                úplně jiný pohled na mě samotnou</span>. Pomohla mi lépe pochopit některé moje vlastnosti, talenty i
+            <p>O numerologii a tarot jsem se zajímala už předtím, ale právě <span>Matice osudu mi tehdy začala dávat
+                    úplně jiný pohled na mě samotnou</span>. Pomohla mi lépe pochopit některé moje vlastnosti, talenty i
                 to, proč mě určité věci přitahují a jiné naopak vůbec nenaplňují.</p>
 
-            <p>Čím víc jsem se o matici osudu dozvídala, tím víc mě zajímala. Začala jsem studovat jednotlivé
+            <p>Čím víc jsem se o Matici osudu dozvídala, tím víc mě zajímala. Začala jsem studovat jednotlivé
                 energie, hledat v nich souvislosti a postupně se věnovat i <span>seberozvoji a hlubšímu poznávání sebe
-                sama</span>. Zajímalo mě nejen to, co jednotlivé energie znamenají, ale především jak se projevují v reálném
+                    sama</span>. Zajímalo mě nejen to, co jednotlivé energie znamenají, ale především jak se projevují v
+                reálném
                 životě a jak s nimi můžeme vědomě pracovat.</p>
 
             <p>Postupně jsem začala dělat rozbory svým blízkým a známým. Začala jsem si všímat, jak může
-                matice osudu člověku pomoct pojmenovat věci, které v sobě třeba dlouho cítil, ale nedokázala je
+                Matice osudu člověku pomoct pojmenovat věci, které v sobě třeba dlouho cítil, ale nedokázala je
                 přesně uchopit. A právě to mě na ní začalo bavit nejvíc – že nám může ukázat nejen naše <span>silné
-                stránky</span> a <span>talenty</span>, ale také oblasti, na kterých můžeme pracovat a díky kterým se můžeme posouvat
+                    stránky</span> a <span>talenty</span>, ale také oblasti, na kterých můžeme pracovat a díky kterým se
+                můžeme posouvat
                 dál.
             </p>
 
@@ -194,15 +208,16 @@
                 co všechno se za jednotlivými čísly může skrývat.</p>
 
             <p><span>Mojí hlavní profesí je účetnictví</span>, takže mě čísla provází i v běžném pracovním životě. A
-                možná není náhoda, že jsem si našla cestu právě k matici osudu – <span>čísla jsou zkrátka moje téma, jen je pokaždé
-                používám trochu jinak</span>.</p>
+                možná není náhoda, že jsem si našla cestu právě k Matici osudu – <span>čísla jsou zkrátka moje téma, jen
+                    je pokaždé
+                    používám trochu jinak</span>.</p>
 
             <p>Dnes Matice osudu vnímám především jako <span>nástroj sebepoznání a seberozvoje</span>.
                 Jako mapu, která nám může pomoct lépe pochopit sami sebe, svůj potenciál, své výzvy i směr,
                 kterým se chceme vydat. Neříká nám, co se musí stát. Spíš nám ukazuje, s jakými energiemi
                 přicházíme do života a jak s nimi můžeme pracovat.</p>
 
-            <p>A možná právě proto mě matice osudu baví tolik. <span>Protože sama jsem díky ní kdysi začala hledat
+            <p>A možná právě proto mě Matice osudu baví tolik. <span>Protože sama jsem díky ní kdysi začala hledat
                     odpověď na otázku, co vlastně chci – a postupně jsem díky ní našla cestu, která mě začala bavit
                     a dávat mi smysl</span>.</p>
         </section>

@@ -1,0 +1,350 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 1.4rem;
+}
+
+.calculator h1 {
+    font-size: 2rem;
+}
+
+.calculator h1 span {
+    display: block;
+}
+
+.calculator span {
+    color: var(--text-muted);
+}
+
+svg {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+}
+
+.calculator .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.calculator .subtitle p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.calculator .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 12px;
+    font-family:Play
+}
+
+.calculator input[type="text"] {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: border-color 0.3s ease;
+}
+
+.calculator input[type="text"]:focus {
+    outline: none;
+    border-color: var(--secondary-btn);
+}
+
+.calculator button {
+    background: linear-gradient(var(--secondary-btn), var(--primary-btn));
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s ease-out;
+    font-family:"Playfair Display";
+}
+
+.calculator button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--glow);
+}
+
+.calculator .canvas-card {
+    background: var(--primary-bg);
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.calculator .energies-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.calculator .energy-card.full-width {
+    grid-column: 1 / -1;
+}
+
+.calculator .energy-card {
+    background: var(--primary-bg);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--secondary-btn);
+    text-align: left;
+}
+
+.calculator .energy-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.calculator .energy-number {
+    background: var(--secondary-btn);
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.calculator .energy-card-header h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.calculator .energy-text p {
+    margin-bottom: 15px;
+    font-size:1.2rem;
+}
+
+.calculator .energy-text .tip {
+    background: var(--glow);
+    padding: 15px;
+    border-left: 4px solid var(--secondary-btn);
+    border-radius: 4px;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.calculator .energy-text .muted {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    display: block;
+}
+
+.calculator .period-card {
+    background: var(--primary-bg);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.calculator .period-card h3 {
+    font-size: 1.8rem;
+    color: var(--secondary-btn);
+    margin-bottom: 20px;
+}
+
+.calculator .period-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.calculator .period-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator .period-num .num {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-muted);
+}
+
+.calculator .period-num .lbl {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.calculator .period-interpretations {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 900px) {
+    .calculator .period-interpretations {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.calculator .period-interp-item {
+    background: var(--secondary-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border-top: 3px solid var(--primary-btn);
+}
+
+.calculator .period-interp-num {
+    font-weight: bold;
+    color: var(--secondary-btn);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--glow);
+    padding-bottom: 10px;
+}
+
+.calculator .period-interp-text {
+    font-size: 0.95rem;
+}
+
+.calculator .period-interp-text p {
+    margin-bottom: 10px;
+}
+.calculator .period-interp-text p:last-child {
+    margin-bottom: 0;
+}
+
+.calculator .chakra-grid {
+    display: flex;
+    flex-direction: column;
+    background: var(--primary-bg);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+.calculator .chakra-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #3a1e4a;
+    align-items: center;
+}
+
+.calculator .total-row {
+    border-bottom: none;
+}
+
+.calculator .chakra-header {
+    font-weight: 600;
+    color: var(--secondary-btn);
+    border-bottom: 2px solid var(--secondary-btn);
+}
+
+.calculator .chakra-label {
+    font-weight: bold;
+}
+
+.calculator .chakra-sublabel {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.calculator .cta-inline {
+    background: var(--glow);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+
+.calculator .cta-inline p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.calculator .btn-cta-inline {
+    display: inline-block;
+    background: linear-gradient(var(--secondary-btn), var(--primary-btn));
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    margin:20px 0;
+    transition: 0.5s ease-out; 
+}
+
+.calculator .btn-cta-inline:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px var(--primary-bg);
+}
+
+/* Mobilní zobrazení: Matice od kraje ke kraji */
+@media (max-width: 768px) {
+    .calculator .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .calculator .canvas-card {
+        border-radius: 0;
+        padding: 10px 0;  
+    }
+
+    .calculator .table-card {
+        padding: 0;
+    }
+}
+
+/* Pojistka pro opravdu úzké telefony */
+@media (max-width: 450px) {
+    .calculator .chakra-row {
+        font-size: 0.9rem;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 5px;
+        padding: 10px 0;
+    }
+}

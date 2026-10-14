@@ -159,9 +159,7 @@ content: "";
     */
 }
 
-/* --- Calculator --- */
-
-/* -- chci rozbor -- */
+/* -- CHCI ROZBOR -- */
 
 .scroll-button {
     margin: 80px 0;
@@ -186,66 +184,16 @@ content: "";
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* -- kalkulačka -- */
-
-.calculator {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 40px;
-    font-size: 1.4rem;
-}
-
-.calculator h1 {
-    font-size: 2rem;
-}
-
-.calculator h1 span {
-    display: block;
-}
-
-.calculator span {
-    color: var(--text-muted);
-}
-
-.calculator a {
-    text-decoration: none;
-    color: var(--text-main);
-    background: linear-gradient(var(--secondary-btn), var(--primary-btn));
-    width: 80%;
-    padding: 10px 0;
-    border-radius: 16px;
-    font-size: 1.5rem;
-    margin-top: 30px;
-    transition: 0.5s ease-out;
-}
-
-.calculator a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 10px var(--glow);
-}
-
-.calculator p {
-    margin: 2px 0;
-}
+/* --- Rozbory button --- */
 
 @media (min-width:1200px) {
     .scroll-button a {
         max-width: 650px;
         font-size: 3rem;
     }
-
-    .calculator p {
-        max-width: 800px;
-    }
-
-    .calculator a {
-        margin-top: 70px;
-        max-width: 300px;
-    }
 }
+
+
 
 /* --- Analyses ---*/
 
@@ -270,6 +218,7 @@ content: "";
 .rozbory .boxes {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 30px;
@@ -322,6 +271,7 @@ content: "";
     .rozbory .boxes {
         flex-direction: row;
         justify-content: center;
+        align-items: stretch;
         width: 1000px;
     }
 
